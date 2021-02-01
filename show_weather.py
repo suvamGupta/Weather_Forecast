@@ -1,8 +1,9 @@
+import os
 import requests
 import json
 from datetime import datetime
 
-api_key = 'cbb6b8a7a93022bfe48120a12e239d34'
+api_key = os.environ['open_weather']
 city_name = input('\nEnter the city name : ').strip()
 
 # api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -33,3 +34,9 @@ else:
     print('Wind Speed            :  {} kmph'.format(wind_spd))
     print('Humidity              :  {} %\n'.format(humid))
     b = input()
+
+# def main():
+#     pass
+
+# if __name__ == '__main__':
+#     main()
