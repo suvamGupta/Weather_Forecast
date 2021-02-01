@@ -2,6 +2,8 @@
 
 A simple project to show *current weather of any city* using **OpenWeatherMap API** in python
 
+![App look][look.PNG]
+
 ### Setup
 
 Requests module is needed to send HTTP request<br/>
